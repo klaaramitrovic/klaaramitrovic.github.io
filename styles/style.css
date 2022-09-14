@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 60%;
+    margin: 1% auto;
+}
+
+.title {
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+#heading {
+   height: 30%;
+   background-color: #788f58;
+   color: white;
+   text-align: center;
+   padding: 40px;
+}
+
+#name {
+    text-transform: capitalize;
+    font-size: 30px;
+    padding-bottom: 10px;
+    letter-spacing: 0.15em;
+}
+
+#position {
+    font-size: 15px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    margin-top: 3%;
+}
+
+.main div {
+    /*TODO: promeniti border*/
+    
+}
+
+.sectionOne {
+    width: calc((100%-1px) / 2);
+}
+
+.sectionTwo {
+    width: 1px;
+    background-color: #b5afafdd;
+}
+
+.sectionThree {
+    width: calc((100%-1px) / 2);
+}
+
+.left {
+    text-align: right;
+    padding-right: 7%;
+    padding-bottom: 5%;
+}
+
+.leftTitle {
+    margin-top: 1%;
+    position: relative;
+    margin-bottom: 3%;
+}
+
+.leftTitle::after {
+    content: '';
+    background-color: #b5afafdd;
+    display: inline-block;
+    width: 5%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    right: -7%;
+}
+
+.leftTitle::before{
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 7.5px;
+    background-color: #788f58;
+    position: absolute;
+    top: calc(50% - 2.5px);
+    left: 107%;
+    z-index: 1;
+}
+
+#summaryList{
+    list-style-type: none;
+}
+
+.skill {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 3.5%;
+    flex-wrap: wrap;
+}
+
+.skillName {
+    margin-right: 5%;
+    width: 10%;
+}
+
+.progressBar {
+    width: 38%;
+    background-color: #D3D3D3;
+    margin-right: 5%;
+    height: 5px;
+    margin-top: 1.5%;
+}
+
+.skillset {
+    color: #788f58;
+    text-align: left;
+}
+
+.html {
+    width: 80%;
+    background-color: #788f58;
+    height: 5px;
+}
+
+.css {
+    width: 40%;
+    background-color: #788f58;
+    height: 5px;
+}
+
+.java {
+    width: 65%;
+    background-color: #788f58;
+    height: 5px;
+}
+
+.mysql {
+    width: 70%;
+    background-color: #788f58;
+    height: 5px;
+}
+
+.nextjs {
+    width: 40%;
+    background-color: #788f58;
+    height: 5px;
+}
+
+#contact {
+    list-style-type: none;
+}
+
+.right {
+    text-align: left;
+    padding-left: 7%;
+    padding-bottom: 5%;
+}
+
+.rightTitle {
+    margin-top: 1%;
+    position: relative;
+    margin-bottom: 3%;
+}
+
+.rightTitle::after {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 7.5px;
+    background-color: #788f58;
+    position: absolute;
+    top: calc(50% - 2.5px);
+    right: 107%;
+    z-index: 1;
+}
+
+.rightTitle::before{
+    content: '';
+    background-color: #b5afafdd;
+    display: inline-block;
+    width: 5%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: -7%;
+}
+
+#companyData {
+    margin-bottom: 2%;
+}
