@@ -102,7 +102,7 @@
     background-color: #788f58;
     position: absolute;
     top: calc(50% - 2.5px);
-    left: 107%;
+    left: calc(107% + 0.25px);
     z-index: 1;
 }
 
@@ -117,7 +117,7 @@
     background-color: #788f58;
     position: absolute;
     top: calc(50% - 2.5px);
-    right: 107%;
+    left: calc(-7% - 4.5px);
     z-index: 1;
 }
 
