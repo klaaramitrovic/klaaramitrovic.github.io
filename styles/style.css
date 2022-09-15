@@ -42,11 +42,6 @@
     margin-top: 3%;
 }
 
-.main div {
-    /*TODO: promeniti border*/
-    
-}
-
 .sectionOne {
     width: calc((100%-1px) / 2);
 }
