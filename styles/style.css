@@ -21,35 +21,18 @@
    background-color: #788f58;
    color: white;
    text-align: center;
-   height: 300px;
    padding: 4%;
 }
 
-#frame {
-    width: 20%;
-}
-
-#picture {
-    width: 100%;
-    height: 100%;
-    background-image: url('../assets/slika\ crop.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-}
-
 #namePosition {
-    width: 30%;
+    width: 50%;
     height: 100%;
-    padding-top: 7%;
-
 }
 
 
 #name {
     text-transform: capitalize;
-    font-size: 30px;
+    font-size: 165%;
     padding-bottom: 10px;
     letter-spacing: 0.15em;
 }
@@ -85,6 +68,12 @@
     padding-bottom: 5%;
 }
 
+.right {
+    text-align: left;
+    padding-left: 7%;
+    padding-bottom: 5%;
+}
+
 .leftTitle {
     margin-top: 1%;
     position: relative;
@@ -117,6 +106,33 @@
     z-index: 1;
 }
 
+.rightTitle::after {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 7.5px;
+    background-color: #788f58;
+    position: absolute;
+    top: calc(50% - 2.5px);
+    right: 107%;
+    z-index: 1;
+}
+
+.rightTitle::before{
+    content: '';
+    background-color: #b5afafdd;
+    display: inline-block;
+    width: 5%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: -7%;
+}
+
+
 #summaryList{
     list-style-type: none;
 }
@@ -125,12 +141,10 @@
     display: flex;
     justify-content: flex-end;
     margin-bottom: 3.5%;
-    flex-wrap: wrap;
 }
 
 .skillName {
-    margin-right: 5%;
-    width: 10%;
+    padding-right: 5%;
 }
 
 .progressBar {
@@ -180,44 +194,89 @@
     list-style-type: none;
 }
 
-.right {
-    text-align: left;
-    padding-left: 7%;
-    padding-bottom: 5%;
-}
-
 .rightTitle {
     margin-top: 1%;
     position: relative;
     margin-bottom: 3%;
 }
 
-.rightTitle::after {
-    content: '';
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    -moz-border-radius: 7.5px;
-    -webkit-border-radius: 7.5px;
-    border-radius: 7.5px;
-    background-color: #788f58;
-    position: absolute;
-    top: calc(50% - 2.5px);
-    right: 107%;
-    z-index: 1;
-}
-
-.rightTitle::before{
-    content: '';
-    background-color: #b5afafdd;
-    display: inline-block;
-    width: 5%;
-    height: 1px;
-    position: absolute;
-    top: 50%;
-    left: -7%;
-}
-
 #companyData {
     margin-bottom: 2%;
+}
+
+@media (max-width: 1260px) {
+    .skill {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-bottom: 3.5%;
+        align-items: flex-end;
+        
+    }
+    .progressBar {
+        padding-right: 0%;
+    }
+
+    .percent {
+        padding-right: 5%;
+    }
+
+}
+
+@media (max-width: 481px) {
+    .sectionTwo {
+        display: none;
+    }
+
+    .leftTitle::after {
+        display: none;
+    }
+
+    .leftTitle::before{
+        display: none;
+    }
+
+    .rightTitle::after {
+        display: none;
+    }
+
+    .rightTitle::before {
+        display: none;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-top: 3%;
+    }
+
+    .sectionOne {
+        width: 100%
+    }
+
+    .sectionThree {
+        width: 100%
+    }
+
+    .left {
+        text-align: left;
+        padding-right: 0%;
+        padding-bottom: 0%;
+    }
+
+    .right {
+        text-align: left;
+        padding-left: 0%;
+        padding-bottom: 0%;
+    }
+
+    .skill {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .title {
+        padding-top: 2%;
+    }
 }
