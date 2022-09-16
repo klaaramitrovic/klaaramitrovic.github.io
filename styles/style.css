@@ -24,7 +24,7 @@
    padding: 4%;
 }
 
-#namePosition {
+#name-position {
     width: 50%;
     height: 100%;
 }
@@ -49,16 +49,16 @@
     margin-top: 3%;
 }
 
-.sectionOne {
+.section-one {
     width: calc((100%-1px) / 2);
 }
 
-.sectionTwo {
+.section-two {
     width: 1px;
     background-color: #b5afafdd;
 }
 
-.sectionThree {
+.section-three {
     width: calc((100%-1px) / 2);
 }
 
@@ -74,13 +74,13 @@
     padding-bottom: 5%;
 }
 
-.leftTitle {
+.left-title {
     margin-top: 1%;
     position: relative;
     margin-bottom: 3%;
 }
 
-.leftTitle::after {
+.left-title::after {
     content: '';
     background-color: #b5afafdd;
     display: inline-block;
@@ -91,7 +91,7 @@
     right: -7%;
 }
 
-.leftTitle::before{
+.left-title::before{
     content: '';
     display: inline-block;
     width: 5px;
@@ -106,7 +106,7 @@
     z-index: 1;
 }
 
-.rightTitle::after {
+.right-title::after {
     content: '';
     display: inline-block;
     width: 5px;
@@ -121,7 +121,7 @@
     z-index: 1;
 }
 
-.rightTitle::before{
+.right-title::before{
     content: '';
     background-color: #b5afafdd;
     display: inline-block;
@@ -133,7 +133,7 @@
 }
 
 
-#summaryList{
+#summary-list{
     list-style-type: none;
 }
 
@@ -143,11 +143,11 @@
     margin-bottom: 3.5%;
 }
 
-.skillName {
+.skill-name {
     padding-right: 5%;
 }
 
-.progressBar {
+.progress-bar {
     width: 38%;
     background-color: #D3D3D3;
     margin-right: 5%;
@@ -194,18 +194,25 @@
     list-style-type: none;
 }
 
-.rightTitle {
+.right-title {
     margin-top: 1%;
     position: relative;
     margin-bottom: 3%;
 }
 
-#companyData {
+#company-data {
     margin-bottom: 2%;
 }
 
 .list {
     padding-left: 3%;
+}
+
+#linkedin, #email {
+  width: 100%; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  white-space: nowrap;
 }
 
 @media (max-width: 1260px) {
@@ -217,8 +224,9 @@
         align-items: flex-end;
         
     }
-    .progressBar {
+    .progress-bar {
         padding-right: 0%;
+        width: 100%;
     }
 
     .percent {
@@ -228,23 +236,26 @@
 }
 
 @media (max-width: 481px) {
-    .sectionTwo {
+    .title {
+        text-align: center;
+    }
+    .section-two {
         display: none;
     }
 
-    .leftTitle::after {
+    .left-title::after {
         display: none;
     }
 
-    .leftTitle::before{
+    .left-title::before{
         display: none;
     }
 
-    .rightTitle::after {
+    .right-title::after {
         display: none;
     }
 
-    .rightTitle::before {
+    .right-title::before {
         display: none;
     }
 
@@ -255,11 +266,11 @@
         margin-top: 3%;
     }
 
-    .sectionOne {
+    .section-one {
         width: 100%
     }
 
-    .sectionThree {
+    .section-three {
         width: 100%
     }
 
